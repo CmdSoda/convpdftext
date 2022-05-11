@@ -28,38 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConvertForm));
             this.convertButton = new System.Windows.Forms.Button();
-            this.reformatDeitiesButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // convertButton
             // 
-            this.convertButton.Location = new System.Drawing.Point(12, 12);
+            this.convertButton.Location = new System.Drawing.Point(16, 15);
+            this.convertButton.Margin = new System.Windows.Forms.Padding(4);
             this.convertButton.Name = "convertButton";
-            this.convertButton.Size = new System.Drawing.Size(215, 103);
+            this.convertButton.Size = new System.Drawing.Size(280, 132);
             this.convertButton.TabIndex = 0;
             this.convertButton.Text = "Convert Clipboard";
             this.convertButton.UseVisualStyleBackColor = true;
             this.convertButton.Click += new System.EventHandler(this.convertButton_Click);
             // 
-            // reformatDeitiesButton
-            // 
-            this.reformatDeitiesButton.Location = new System.Drawing.Point(12, 121);
-            this.reformatDeitiesButton.Name = "reformatDeitiesButton";
-            this.reformatDeitiesButton.Size = new System.Drawing.Size(215, 103);
-            this.reformatDeitiesButton.TabIndex = 1;
-            this.reformatDeitiesButton.Text = "Reformat Deities";
-            this.reformatDeitiesButton.UseVisualStyleBackColor = true;
-            this.reformatDeitiesButton.Click += new System.EventHandler(this.reformatDeitiesButton_Click);
-            // 
             // ConvertForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(239, 254);
-            this.Controls.Add(this.reformatDeitiesButton);
+            this.ClientSize = new System.Drawing.Size(311, 161);
             this.Controls.Add(this.convertButton);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ConvertForm";
@@ -72,6 +64,5 @@
         #endregion
 
         private Button convertButton;
-        private Button reformatDeitiesButton;
     }
 }
